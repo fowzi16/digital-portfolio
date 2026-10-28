@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raji | My Personal Website</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f5ff;
+            color: #29213b;
+            line-height: 1.7;
+        }
+
+        header {
+            background-color: #6c3bd1;
+            color: white;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        header h2 {
+            font-size: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 8px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #f5dfff;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 90px 20px;
+            background: linear-gradient(135deg, #eee5ff, #fce7f3);
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            color: #6333bf;
+            margin-bottom: 12px;
+        }
+
+        .hero p {
+            font-size: 19px;
+            margin-bottom: 25px;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #6c3bd1;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            margin: 5px;
+        }
+
+        .button:hover {
+            background-color: #49209b;
+        }
+
+        section {
+            padding: 55px 10%;
+            text-align: center;
+        }
+
+        section h2 {
+            color: #6333bf;
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            max-width: 750px;
+            margin: auto;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 25px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 25px;
+            border-radius: 15px;
+            width: 220px;
+            box-shadow: 0 4px 15px #ddd2f0;
+        }
+
+        .card h3 {
+            color: #6c3bd1;
+            margin-bottom: 10px;
+        }
+
+        .goals {
+            background-color: #eee5ff;
+        }
+
+        .contact p {
+            margin: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 22px;
+            background-color: #39205f;
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                justify-content: center;
+                gap: 10px;
+            }
+
+            nav {
+                text-align: center;
+            }
+
+            .hero h1 {
+                font-size: 34px;
+            }
+
+            section {
+                padding: 40px 6%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>Raji 💜</h2>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#goals">Goals</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="hero" id="home">
+        <h1>Hello, I'm Raji 💜</h1>
+        <p>Welcome to my little corner of the internet!</p>
+        <p>A learner, a dreamer, and a person who believes in growth.</p>
+        <a href="#about" class="button">Know More About Me</a>
+    </div>
+
+    <section class="about" id="about">
+        <h2>About Me ✨</h2>
+        <p>
+            Hi! I'm Raji. I'm interested in technology and learning new things.
+            I'm currently improving my programming skills and exploring web
+            development. I believe every small step helps me move closer to
+            my dreams. This website is my first little project, and I'm excited
+            to learn more every day!
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2>My Skills 💻</h2>
+        <p>Here are some things I'm learning and practising.</p>
+
+        <div class="cards">
+            <div class="card">
+                <h3>🌐 HTML</h3>
+                <p>Learning to create the structure of web pages.</p>
+            </div>
+
+            <div class="card">
+                <h3>🎨 CSS</h3>
+                <p>Learning to style websites with colours and layouts.</p>
+            </div>
+
+            <div class="card">
+                <h3>🐍 Python</h3>
+                <p>Practising programming basics and problem-solving.</p>
+            </div>
+
+            <div class="card">
+                <h3>📚 Learning</h3>
+                <p>Exploring new concepts and improving my knowledge.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="goals" id="goals">
+        <h2>My Goals 🌟</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Learn More</h3>
+                <p>Understand programming one step at a time.</p>
+            </div>
+
+            <div class="card">
+                <h3>Build Projects</h3>
+                <p>Create useful projects and gain practical experience.</p>
+            </div>
+
+            <div class="card">
+                <h3>Keep Growing</h3>
+                <p>Stay curious, practise regularly, and never stop learning.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>My Favourite Quote 💜</h2>
+        <p>
+            "Believe in yourself, keep learning, and make every day count."
+        </p>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Me 📩</h2>
+        <p>Thank you for visiting my website!</p>
+        <p>I'd love to keep learning and connecting with new people.</p>
+        <a href="#home" class="button">Back to Top ↑</a>
+    </section>
+
+    <footer>
+        <p>Made with 💜 by Raji</p>
+        <p>© 2026 Raji. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
